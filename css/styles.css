@@ -1,0 +1,141 @@
+/*-------------Base Element Styles-------------*/
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    background-color: #fff;
+    color: #3a3a3a;
+	text-align: center;
+	font-size: 0.9em;
+	width: 100%;
+	margin: 0;
+}
+
+
+
+.main-header,
+h1
+h2,
+h3,
+p {
+	text-align: center;
+	font-size: 1.5em;
+	font-family:  Helvetica, Arial, san-serif;
+	line-height: 1.3;
+	
+}
+
+
+
+
+
+ul {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 15px;
+	list-style: none;
+	padding: 0;
+}
+
+.main-nav {
+	width: 100%;
+	
+}
+
+.main-nav li {
+	display: block;
+	padding: 16px;
+	margin: 0.3em 1em;
+	
+}
+
+a:link {
+	  color: rgb(128, 73, 255);
+	  text-decoration: none;
+	}
+
+.profile-picture {
+    max-width: 275px;
+	padding: 1em 1em;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.main-header {
+    margin-top: 0;
+	padding-bottom: 20px;
+	background: #fffafe;
+	padding-top: .8em;
+	text-align: center;
+}
+
+.profile-picture,
+.portfolio-01,
+.portfolio-02,
+.portfolio-03,
+.portfolio-04,
+.portfolio-05,
+.portfolio-06 {
+	max-width: 500px;
+	padding: 16px 20px;
+	margin: 20px;
+	
+}
+ 
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.main-footer {
+	
+	font-size: 16px;
+	border-top: 1px solid black;
+	width: 95%;
+	margin: 0 auto;
+	padding: 1em 0;
+}
+
+#botton-name {
+	text-align: left;
+}
+
+
+.main-footer {
+	text-align: right;
+}
+
+
+.main-footer,
+.footer.nav,
+.footer-nav li {
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
