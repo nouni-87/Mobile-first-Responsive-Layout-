@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <HTML lang="en">
+
     <HEAD>
         <meta charset="utf-8">
         <meta name=viewport content="width=device-width, initial-scale=1">
         <TITLE>Hanane ladj</TITLE>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold">
+        
     </HEAD>
 
     <BODY>
         
-        <div class="container">
-        <header class="main-header">
-            <div class="container">
-                <h1 class="name">Hanane Ladj</h1>
 
+        <header class="main-header">
+            
+            
+                <h1 class="name">Hanane Ladj</h1>
                 <nav>
                 <ul class="main-nav">
                     <li><a href="#">Home</a></li>
@@ -23,54 +26,60 @@
                 </ul>
             </nav>
         
-            <img src="images/responsive-layout-profile.png" alt="my picture" class="profile-picture">
+            <img src="images/responsive-layout-profile.png" alt="my picture" class="profile-pic">
+        <div class="profile-p">
             <p>Hi! I'm a front end developper who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use.</p>
+        </div>
+    
         </header>
-    </div>
+  
 
         <main>
-
-        <div class="container">
+            <div class= "container clearfix">
             
-            <div class= "col-1"></div>
-            <h2>Portfolio</h2>
+            <div>
+            <h2 id="portfolio">Portfolio</h2>
+            </div>
 
-            <h3>Marketing Page</h3>
+            <div class="col-1">
             <img src="images/portfolio-1.png" alt="my web project" class="portfolio-01">
+            <h3>Marketing Page</h3>
             <p>This project shows the font page of a marketing website meant for a specific business i'm interested in.</p>
-        </div>
+            </div>
 
-        
+     
             <div class="col-2">
-            <h3>Search Page</h3>
             <img src="images/portfolio-2.png" alt="my web page" class="portfolio-02">
+            <h3>Search Page</h3>
             <p>This project searches through s apecific database to fimd information that the user is trying to look up</p>
-        </div>
+            </div>
         
-            <div class="col-2"></div>
-            <h3>Travel App</h3>
+            <div class="col-3">
             <img src="images/portfolio-3.png" alt="my travelapp picture" class="portfolio-03">
+            <h3>Travel App</h3>
             <p>This project compares travel times based on different transportation methods and tell you the best one.</p>
-        </div>
+            </div>
         
-        <div class="col-3">
-            <h3>Map of Favorite spot</h3>
+            <div class="col-4">
             <img src="images/portfolio-4.png" alt="maps picture" class="portfolio-04">
+            <h3>Map of Favorite spot</h3>
             <p>This project uses aps to plat points for my favorite spots in the city for a do it yourself walking tour.</p>
-        </div>
+            </div>
         
-        <div class=col-4>
-            <h3>Photo Gallery</h3>
+            <div class=col-5>
             <img src="images/portfolio-5.png" alt="my gallery picture" class="portfolio-05">
+            <h3>Photo Gallery</h3>
             <p>This project shows a pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-        </div>
+            </div>
 
-        <div class="col-5">
-            <h3>Calculator</h3>
+            <div class="col-6">
             <img src="images/portfolio-6.png" alt="oicture of a calculator" class="portfolio-06">
+            <h3>Calculator</h3>
             <p>Someone can enter in the numbers they want,and press the big blue botton and get the result.</p>
+            </div>
 
-            <div id="skills">
+  
+        `   <div id="skills">
 
                 <h3>My Skills</h3>
                 <p>I am learning HTML,CSS and JAVA Script. </p>
@@ -84,8 +93,10 @@
             <p>Phone:<strong>+1 (111)555-1234</strong></p>
 
         </div>
-        
+    
+    
         </main>
+    </div>
 
 
         <footer class= "main-footer">

@@ -5,6 +5,12 @@
 }
 
 body {
+	font-family: 'Tangerine', serif;
+	line-height: 1.3;
+	background-color: #f7f5f0;
+}
+
+body {
     line-height: 1.5;
     background-color: #fff;
     color: #3a3a3a;
@@ -16,13 +22,13 @@ body {
 
 
 
-.main-header,
-h1
+
+h1,
 h2,
 h3,
 p {
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.1em;
 	font-family:  Helvetica, Arial, san-serif;
 	line-height: 1.3;
 	
@@ -40,17 +46,7 @@ ul {
 	padding: 0;
 }
 
-.main-nav {
-	width: 100%;
-	
-}
 
-.main-nav li {
-	display: block;
-	padding: 16px;
-	margin: 0.3em 1em;
-	
-}
 
 a:link {
 	  color: rgb(128, 73, 255);
@@ -58,7 +54,7 @@ a:link {
 	}
 
 .profile-picture {
-    max-width: 275px;
+    max-width: 300px;
 	padding: 1em 1em;
 }
 
@@ -82,16 +78,29 @@ img {
 	text-align: center;
 }
 
-.profile-picture,
+
 .portfolio-01,
 .portfolio-02,
 .portfolio-03,
 .portfolio-04,
 .portfolio-05,
 .portfolio-06 {
-	max-width: 500px;
+	max-width: 700px;
 	padding: 16px 20px;
-	margin: 20px;
+	margin-right: 0;
+	
+}
+
+.main-nav {
+	width: 100%;
+	
+}
+
+
+.main-nav li {
+	display: inline;
+	padding: 5px;
+	margin: 1em 1em;
 	
 }
  
@@ -126,6 +135,11 @@ img {
 }
 
 
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
 
 
 
@@ -138,4 +152,95 @@ img {
 ==================================== */
 
 
+@media (min-width: 768px) {
 
+	.container {
+		
+			width: 90%;
+			margin: 0 auto;
+			
+		 }
+
+	.profile-pic {
+		float: right;
+        width: 200px;
+		margin: 5px 10px;
+		padding: 10px;
+	}
+
+
+	
+
+	.profile-p {
+		width: 280px;
+    	margin-top: 0;
+		margin-bottom: 40px;
+		
+	}
+
+	 
+	
+	 .col-1,
+	 .col-2,
+	 .col-3,
+	 .col-4,
+	 .col-5,
+	 .col-6 {
+	    float: left;
+		width: 50%;
+		min-height: 250px;
+		margin: 15px 0;
+	}
+
+
+		
+ }
+
+@media (max-width: 1025px) {
+	.container {
+		width:80%;
+		margin: 0 auto;
+		max-width: 1050px;
+ 	}
+
+ 	.name {
+	float: left;
+	margin: 25px;
+	padding: 10px;
+  	}
+  
+	li {
+	  margin-right: 0;
+	}
+  
+	.main-nav {
+	  width: 50%;
+	  float: right;
+	}
+  
+	.profile-pic {
+		float: right;
+        width: 300px;
+		padding: 40px;
+	
+	}
+
+	.profile-p {
+		font-size: 20px;
+	}
+  
+	
+
+	.col-1,
+	.col-2,
+	.col-3,
+	.col-4,
+	.col-5,
+	.col-6 {
+		float: left;
+		width: calc(30% - 20px);
+		min-height: 375px;
+		margin-bottom: 0;
+	  }
+
+	}	  
