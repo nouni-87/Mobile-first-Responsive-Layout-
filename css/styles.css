@@ -152,13 +152,13 @@ img {
 ==================================== */
 
 
-@media (min-width: 768px) {
-
+@media (max-width: 768px) {
+	min-width: 320px;
 	.container {
 		
 			width: 90%;
 			margin: 0 auto;
-			
+			min-width: 320px;
 		 }
 
 	.profile-pic {
@@ -193,14 +193,12 @@ img {
 	}
 
 
-		
- }
 
-@media (max-width: 1025px) {
+@media (min-width: 1025px) {
 	.container {
 		width:80%;
-		margin: 0 auto;
-		max-width: 1050px;
+		 max-width: 1150px;
+		 margin: 0 auto;
  	}
 
  	.name {
