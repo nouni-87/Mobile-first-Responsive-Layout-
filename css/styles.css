@@ -21,7 +21,12 @@ body {
 }
 
 
-
+header,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 90%;
+}
 
 h1,
 h2,
@@ -53,14 +58,35 @@ a:link {
 	  text-decoration: none;
 	}
 
-.profile-picture {
-    max-width: 300px;
-	padding: 1em 1em;
-}
+	.profile-pic {
+		float: right;
+        width: 250px;
+		
+		padding-bottom: 3em;
+
+	}
+
+	.profile-p {
+		font-size: 1em;
+        text-align: center;
+        max-width: 20em;
+	}
+
+
 
 img {
     width: 100%;
 }
+
+
+.name {
+	font-size: 1.25em;
+}
+
+
+
+
+
 
 
 
@@ -72,24 +98,14 @@ img {
 
 .main-header {
     margin-top: 0;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 	background: #fffafe;
-	padding-top: .8em;
+	padding: 2em;
 	text-align: center;
-}
-
-
-.portfolio-01,
-.portfolio-02,
-.portfolio-03,
-.portfolio-04,
-.portfolio-05,
-.portfolio-06 {
-	max-width: 700px;
-	padding: 16px 20px;
-	margin-right: 0;
+	margin: 0 15px;
 	
 }
+
 
 .main-nav {
 	width: 100%;
@@ -134,6 +150,18 @@ img {
 	display: inline-block;
 }
 
+.portfolio-01,
+.portfolio-02,
+.portfolio-03,
+.portfolio-04,
+.portfolio-05,
+.portfolio-06 {
+	max-width: 700px;
+	padding: 16px 20px;
+	margin-right: 0;
+	
+}
+
 
 .clearfix::after {
 	content: " ";
@@ -152,31 +180,22 @@ img {
 ==================================== */
 
 
-@media (max-width: 768px) {
-	min-width: 320px;
+@media (min-width: 768px) {
+	
 	.container {
-		
+			max-width: 1200px;
 			width: 90%;
 			margin: 0 auto;
-			min-width: 320px;
+		
 		 }
 
-	.profile-pic {
-		float: right;
-        width: 200px;
-		margin: 5px 10px;
-		padding: 10px;
-	}
-
-
 	
+	
+	  
 
-	.profile-p {
-		width: 280px;
-    	margin-top: 0;
-		margin-bottom: 40px;
-		
-	}
+	.main-nav li {
+		display: inline;
+	  }
 
 	 
 	
@@ -192,7 +211,14 @@ img {
 		margin: 15px 0;
 	}
 
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	
 
+}
 
 @media (min-width: 1025px) {
 	.container {
@@ -216,16 +242,9 @@ img {
 	  float: right;
 	}
   
-	.profile-pic {
-		float: right;
-        width: 300px;
-		padding: 40px;
 	
-	}
 
-	.profile-p {
-		font-size: 20px;
-	}
+	
   
 	
 
@@ -241,4 +260,11 @@ img {
 		margin-bottom: 0;
 	  }
 
-	}	  
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	
+
+}	  
