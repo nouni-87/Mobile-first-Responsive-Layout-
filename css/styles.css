@@ -11,7 +11,7 @@ body {
     background-color: #fff;
     color: #3a3a3a;
 	text-align: center;
-	font-size: 0.9em;
+	font-size: 1em;
 	width: 100%;
 	margin: 0;
 }
@@ -24,7 +24,7 @@ footer {
     max-width: 90%;
 }
 
-h1,
+
 h2,
 h3,
 p {
@@ -35,6 +35,34 @@ p {
 	
 }
 
+.name {
+	font-size: 1.25em;
+	margin: 0;
+	color: #324efa;
+}
+
+
+
+.name a,
+.main-nav a {
+	padding:10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #324efa;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #096458;
+}
+
+.main-header {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	
+ }
 
 
 
@@ -56,9 +84,10 @@ a:link {
 
 	.profile-pic {
 		
-		width: 250px;
+		width: 280px;
 		max-width: 400px;
-		padding-bottom: 3em;
+		padding-top: .5em;
+		padding-bottom: .5em;
 
 	}
 
@@ -102,7 +131,8 @@ img {
 }
 
 .profile-pic{
-	width:150;
+	width: 150px;
+	
 
 }
 
@@ -127,28 +157,10 @@ img {
 	font-size: 16px;
 	border-top: 1px solid black;
 	width: 95%;
-	margin: 0 auto;
-	padding: 1em 0;
+	background: #d9e4ea;
+	margin-top: 5px;
+
 }
-
-#botton-name {
-	text-align: left;
-}
-
-
-.main-footer {
-	text-align: right;
-}
-
-
-.main-footer,
-.footer.nav,
-.footer-nav li {
-	display: inline-block;
-	margin-top: 0;
-}
-
-
 
 .portfolio-01,
 .portfolio-02,
@@ -183,12 +195,12 @@ img {
 @media (min-width: 768px) {
 	
 	.container {
-			max-width: 1200px;
+			
 			width: 90%;
 			margin: 0 auto;
 			padding-left: 5em;
 			padding-right: 5em;
-		
+			
 		 }
 
 	
@@ -201,16 +213,12 @@ img {
 	  .name {
 		  float: none;
 	  }
-
+	  .name,
 	.main-nav li {
 		display: inline;
 		
 	  }
 
-	 
-
-	 
-	
 	 .col-1,
 	 .col-2,
 	 .col-3,
@@ -229,12 +237,27 @@ img {
 
 	.profile-pic {
 		float: right;
-		width: 150px;
-		max-width: 200px;
+		width: 200px;
+		max-width: 250px;
 		margin-top: 20px;
+		margin-right: 20px;
+		margin-left: 20px;
 	}
 
-
+	.student-name {
+		float: left;
+		
+	}
+	
+	.student-name,
+	.footer-nav ul {
+		display: inline-block;
+	}
+	
+	.footer-nav ul {
+		float: right;
+	}
+	
 		
 
 	.clearfix::after {
@@ -249,44 +272,38 @@ img {
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 	.container {
 		width:80%;
 		 max-width: 1150px;
-		 margin: 0 auto;
-		 padding: 0px 40px ;
-		
-		 
-	 }
+	}
 	 
 	 .profile-pic {
 		 
 		float: right;
-		width: 200px;
-		max-width: 400px;
+		width: 250px;
+		max-width: 300px;
 		margin-right: 100px;
 		margin-top: 0px;
-		margin-bottom: 0px;
+		margin-left: 50px;
+		
+		padding-bottom: 30px;
 	 }
 
 	 .main-header {
-		 margin-bottom: 15px;
-	 }
+		margin-bottom: 50px;
+	   
+	}
 
+	 
 	 .name,
-	 .main-nav,
-	 .main-nav li{
+	 .main-nav ul{
 		display: inline-block;
 		margin-top: 0px;
-		
+		margin-left: 100px;
 	}
 	
-	.name {
-		width: 150px;
-		margin-right: 50px
-		margin-top: 30px
-		
-	}
+	
 
 	.name {
 		float: left;
@@ -294,7 +311,8 @@ img {
 
 	.profile-p {
 		margin-left: 50px;
-		
+		max-width: 500px;
+		text-align: center;
 	}
 
 	
