@@ -7,13 +7,14 @@
 
 body {
 	font-family: 'Tangerine', serif;
-    line-height: 1.5;
+    line-height: 1.3;
     background-color: #fff;
     color: #3a3a3a;
 	text-align: center;
-	font-size: 1em;
+	font-size: .85em;
 	width: 100%;
-	margin: 0;
+	
+	
 }
 
 
@@ -21,7 +22,7 @@ header,
 main,
 footer {
     margin: 0 auto;
-    max-width: 90%;
+    
 }
 
 
@@ -35,13 +36,21 @@ p {
 	
 }
 
+/* ================================= 
+ Navigation-styles
+==================================== */
+
+
 .name {
 	font-size: 1.25em;
 	margin: 0;
 	color: #324efa;
 }
 
-
+.main-nav li {
+	display: block;
+	padding: 2px;
+}
 
 .name a,
 .main-nav a {
@@ -61,11 +70,8 @@ p {
 .main-header {
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
-	
+	max-width: 1100px;
  }
-
-
-
 
 ul {
 	width: 100%;
@@ -82,40 +88,6 @@ a:link {
 	  text-decoration: none;
 	}
 
-	.profile-pic {
-		
-		width: 280px;
-		max-width: 400px;
-		padding-top: .5em;
-		padding-bottom: .5em;
-
-	}
-
-	.profile-p {
-		font-size: 1em;
-    	text-align: center;
-		width: 100%;
-		
-	}
-
-
-
-img {
-    width: 100%;
-}
-
-
-.name {
-	font-size: 1.25em;
-}
-
-
-
-
-
-
-
-
 
 
 /* ================================= 
@@ -125,25 +97,25 @@ img {
 .main-header {
     
 	padding-bottom: 50px;
-	background: #fffafe;
+	background-color: #dbe2e4;
 	text-align: center;
 	
 }
 
-.profile-pic{
-	width: 150px;
-	
+
+.profile-pic {
+		
+	width: 280px;
+	max-width: 400px;
+	padding-top: .5em;
+	padding-bottom: .5em;
 
 }
 
-
-
-.main-nav li {
-	display: block;
-	padding: 5px;
-	margin: 1em 1em;
-	
+img {
+width: 100%;
 }
+
 
 
 .container {
@@ -152,15 +124,6 @@ img {
 }
 
 
-.main-footer {
-	
-	font-size: 16px;
-	border-top: 1px solid black;
-	width: 95%;
-	background: #d9e4ea;
-	margin-top: 5px;
-
-}
 
 .portfolio-01,
 .portfolio-02,
@@ -168,11 +131,41 @@ img {
 .portfolio-04,
 .portfolio-05,
 .portfolio-06 {
-	max-width: 700px;
-	padding: 16px 20px;
+	max-width: 500px;
+	padding: 15px 20px;
 	margin-right: 0;
 	
 }
+
+/* ================================= 
+  Footer-Styles
+==================================== */
+
+.student-name {
+	float: left;
+	
+}
+
+.student-name,
+.footer-nav li {
+	display: inline-block;
+	padding: 2px;
+	margin: 1em 1em;
+}
+
+.footer-nav {
+	float: right;
+}
+
+.main-footer {
+	
+	font-size: 16px;
+	border-top: 1px solid black;
+	width: 100%;
+	background-color: #dbe2e4;
+}
+
+
 
 
 .clearfix::after {
@@ -205,11 +198,7 @@ img {
 
 	
 	
-	  .main-header {
-		  margin-left: 180px;
-		  margin-right: 210px;
-		
-	  }
+	
 	  .name {
 		  float: none;
 	  }
@@ -228,7 +217,7 @@ img {
 	    float: left;
 		width: 50%;
 		margin: 15px 0;
-		width: 270px;
+		
 		margin: 0;
 		
 	}
@@ -239,9 +228,10 @@ img {
 		float: right;
 		width: 200px;
 		max-width: 250px;
-		margin-top: 20px;
+		
 		margin-right: 20px;
 		margin-left: 20px;
+		
 	}
 
 	.student-name {
@@ -250,15 +240,20 @@ img {
 	}
 	
 	.student-name,
-	.footer-nav ul {
+	.footer-nav li {
 		display: inline-block;
+		padding: 2px;
+		margin: 1em 1em;
 	}
 	
-	.footer-nav ul {
+	.footer-nav {
 		float: right;
 	}
 	
+	.main-footer {
+		margin-left: 15px;
 		
+	}	
 
 	.clearfix::after {
 		content: " ";
@@ -274,14 +269,14 @@ img {
 
 @media (min-width: 1024px) {
 	.container {
-		width:80%;
+		width:100%;
 		 max-width: 1150px;
 	}
 	 
 	 .profile-pic {
 		 
 		float: right;
-		width: 250px;
+		width: 200px;
 		max-width: 300px;
 		margin-right: 100px;
 		margin-top: 0px;
@@ -296,11 +291,15 @@ img {
 	}
 
 	 
-	 .name,
-	 .main-nav ul{
+	 .name {
 		display: inline-block;
 		margin-top: 0px;
 		margin-left: 100px;
+	}
+
+	.main-nav {
+		float: right;
+		width: auto;
 	}
 	
 	
@@ -326,7 +325,7 @@ img {
 	.col-5,
 	.col-6 {
 		float: left;
-		width: calc(30% - 20px);
+		width: 33.33%;
 		min-height: 375px;
 		margin-bottom: 0;
 	  }
