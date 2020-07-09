@@ -41,11 +41,28 @@ p {
 
 #portfolio {
 	color: #324efa;
+	padding-top: 5px;
 }
 
 h3 {
 	color: rgb(90, 50, 90);
 }
+
+.contact {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	padding-top: 20px;
+}
+
+.skills {
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+ 
+ .container-1 {
+	 background-color: hsl(120, 37%, 79%);
+ }
+
 
 
 
@@ -53,32 +70,43 @@ h3 {
  Navigation-styles
 ==================================== */
 
+.main-nav {
+	font-size: 1em;
+	margin-bottom: 20px;
+ }
+
+ 
 
 .name,
 .student-name {
-	font-size: 1.25em;
+	font-size: 1em;
 	margin: 0;
 	color: #324efa;
 }
 
-
+.name {
+	height: 40px;
+}
 
 .main-nav li {
 	display: block;
 	padding: 2px;
+	height: 40px;
 	
 }
 
 .name a,
 .main-nav a {
-	padding:10px 15px;
+	padding:5px 10px;
+	
+
 }
 
 .main-nav a,
 .footer-nav a,
 .link a {
 	font-size: .95em;
-	color: rgb(128, 73, 255);
+
 	text-transform: uppercase;
 }
 
@@ -158,6 +186,15 @@ width: 100%;
 	margin-right: 0;
 	
 }
+ 
+.main-header {
+	margin-bottom: 40px;
+}
+
+li {
+	background-color: blanchedalmond;
+	border: 1px solid hsl(231, 91%, 9%);
+}
 
 /* ================================= 
   Footer-Styles
@@ -193,9 +230,8 @@ width: 100%;
 
 .link {
 	float: right;
-	padding: 3px;
-	margin: 1.2em 1.2em;
-	
+	padding: 2px;
+	margin: 1em;
 }
 
 
@@ -233,8 +269,9 @@ width: 100%;
 	
 	  .name {
 		  float: none;
+		  height: 40px;
 	  }
-	  .name,
+	  
 	.main-nav li {
 		display: inline;
 		
@@ -259,11 +296,16 @@ width: 100%;
 	.profile-pic {
 		float: right;
 		width: 200px;
-		max-width: 250px;
+		max-width: 400px;
 		
 		margin-right: 20px;
 		margin-left: 20px;
-		margin-bottom: 20px;
+		
+	}
+
+	li {
+		background-color: hsl(120, 37%, 79%);
+		border: none;
 	}
 
 	.student-name {
@@ -276,10 +318,16 @@ width: 100%;
 		display: inline-block;
 		padding: 2px;
 		margin: 1em 1em;
+
 	}
 	
 	.footer-nav {
 		float: right;
+		
+	}
+
+	.footer-nav li {
+		background-color: #fff;
 	}
 	
 	.main-footer {
@@ -312,9 +360,9 @@ width: 100%;
 	 .profile-pic {
 		 
 		float: right;
-		width: 200px;
+		width: 250px;
 		max-width: 300px;
-		margin-right: 100px;
+		margin-right: 50px;
 		margin-top: 0px;
 		margin-left: 50px;
 		
@@ -322,9 +370,8 @@ width: 100%;
 	 }
 
 	 .main-header {
-		margin-bottom: 50px;
-	   
-	}
+		 padding-bottom: 80px;
+	 }
 
 	 
 	 .name {
